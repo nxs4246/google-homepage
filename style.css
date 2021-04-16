@@ -1,0 +1,182 @@
+
+.topbar {
+    display: grid;
+    grid-template-columns: repeat(2, 75px) 1fr repeat(2, 75px) repeat(2, 63px);
+    grid-template-rows: 50px;
+    justify-items: center;
+    align-items: center;
+    font-family: arial,sans-serif;
+    cursor: pointer;
+}
+
+.profile_pic {
+    position: relative;
+    overflow: auto;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+}
+
+.logo {
+    display: grid;
+    justify-content: center;
+    position:  relative;
+    margin-top: 15%;
+    margin-bottom: 2.5%;
+}
+
+.searchbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family: arial, sans-serif;
+}
+
+    [type='textbox'] {
+        width: 30rem;
+        height: 32px;
+        font-size: medium;
+        padding: repeat(4, 1%);
+        border-radius: 3rem;
+        padding-left: 3rem;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        outline: none;
+    }
+
+    .icon {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        padding: 8px;
+        margin-right: 30rem;
+    } 
+
+.search_buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+    .gsearch {
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+       }
+
+    .glucky {
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+.botbar {
+    display: flex;
+    background-color: rgb(242, 242, 242);
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    height: 66.6px;
+    width:100%;
+    align-items: center;
+    margin: auto;
+
+    
+}
+
+.right_bot {
+    display: flex;
+    flex-direction: row;
+/*   justify-content: right; */
+    cursor: pointer;
+}
+
+.left_bot {
+    display: flex;
+    flex-direction: row;
+/*    justify-content: left; */
+    cursor: pointer;
+}
+
+    .foot1{
+        padding-right: 20px;
+        padding-left: 20px;
+    }  
+    .foot2{
+        padding-right: 20px;
+        padding-left: 20px;
+    }  
+    .foot3{
+        padding-right: 20px;
+        padding-left: 20px;
+    }  
+    .foot4{
+        padding-right:20px;
+        padding-left: 20px;
+    }
+    .foot5{
+        padding-right: 20px;
+        padding-left: 20px;
+    }  
+    .foot6{
+        padding-right: 20px;
+        padding-left: 20px;
+    }  
+
+@media all and (max-width: 630px) {
+    .botbar {
+        height: 100px;
+        justify-content: center;
+    }
+
+    [type='textbox'] {
+        width: 22rem;
+        height: 32px;
+        font-size: medium;
+        padding: repeat(4, 1%);
+        border-radius: 3rem;
+        padding-left: 3rem;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        outline: none;
+    }
+    .icon {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        padding: 8px;
+        margin-right: 22rem;
+    } 
+
+}
